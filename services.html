@@ -1,193 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leistungen - smzh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Leistungen — smzh</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav-fixes.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <div class="header-container">
       <a href="index.html" class="logo">smzh</a>
-      <nav>
+      <button id="nav-burger" class="nav-burger" aria-expanded="false" aria-label="Menü">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
         <a href="index.html">Startseite</a>
         <a href="services.html">Leistungen</a>
-        <a href="about.html">Über uns</a>
+        <a href="ueber-uns.html">Über uns</a>
         <a href="contact.html">Kontakt</a>
       </nav>
       <button class="btn-header">Termin vereinbaren</button>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-subpage">
-    <div class="hero-subpage-content">
-      <h1>Unsere Leistungen</h1>
-      <p>Umfassende Finanzdienstleistungen für alle Ihre Bedürfnisse</p>
-    </div>
-  </section>
-
-  <!-- Services Grid -->
-  <section class="services">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
-        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #333;">Vermögensplanung</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Strategische Planung für den Aufbau und Erhalt Ihres Vermögens mit individuellen Lösungen.</p>
-          <p style="color: #666; font-size: 0.875rem; margin-bottom: 1rem;">Wir helfen Ihnen, Ihre finanzielle Zukunft zu gestalten. Mit unserer umfassenden Vermögensplanung entwickeln wir eine maßgeschneiderte Strategie, die Ihre Ziele und Ihre Lebenssituation berücksichtigt.</p>
-          <button class="btn-primary" style="width: auto;">Mehr erfahren</button>
-        </div>
-
-        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #333;">Altersvorsorge</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Sichere Ihre Zukunft mit optimalen Vorsorgemaßnahmen und langfristigen Strategien.</p>
-          <p style="color: #666; font-size: 0.875rem; margin-bottom: 1rem;">Eine sichere finanzielle Zukunft beginnt mit einer soliden Altersvorsorge. Wir unterstützen Sie bei der Planung und Optimierung Ihrer Altersvorsorge.</p>
-          <button class="btn-primary" style="width: auto;">Mehr erfahren</button>
-        </div>
-
-        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #333;">Risikoschutz</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Umfassender Schutz für Sie und Ihre Familie durch professionelle Versicherungslösungen.</p>
-          <p style="color: #666; font-size: 0.875rem; margin-bottom: 1rem;">Schützen Sie sich und Ihre Familie vor unvorhergesehenen Ereignissen. Unsere Versicherungslösungen bieten umfassenden Schutz.</p>
-          <button class="btn-primary" style="width: auto;">Mehr erfahren</button>
-        </div>
-
-        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-          <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #333;">Steueroptimierung</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Maximieren Sie Ihre Rendite durch intelligente Steuerplanung und Optimierungsstrategien.</p>
-          <p style="color: #666; font-size: 0.875rem; margin-bottom: 1rem;">Durch intelligente Steuerplanung können Sie Ihre Rendite erheblich verbessern. Wir zeigen Ihnen, wie.</p>
-          <button class="btn-primary" style="width: auto;">Mehr erfahren</button>
-        </div>
+  <main>
+    <section class="hero-subpage">
+      <div class="hero-subpage-content container">
+        <h1>Unsere Leistungen</h1>
+        <p>Umfassende Beratungs- und Dienstleistungsangebote, unabhängig und massgeschneidert für Privat- und Firmenkunden in der Schweiz.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features Section -->
-  <section style="background-color: #f5f5f5; padding: 5rem 1.5rem;">
-    <div class="container">
-      <h2 class="section-title">Warum smzh wählen?</h2>
-      
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Unabhängige Beratung</h3>
-            <p style="color: #666; font-size: 0.875rem;">Wir arbeiten unabhängig und haben nur Ihre Interessen im Blick.</p>
-          </div>
-        </div>
+    <section class="container">
+      <h2>Leistungsübersicht</h2>
 
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Erfahrenes Team</h3>
-            <p style="color: #666; font-size: 0.875rem;">Unser Team besteht aus Finanzexperten mit langjähriger Erfahrung.</p>
-          </div>
-        </div>
+      <div class="block-list">
+        <article>
+          <h3>Steuererklärung & Steuerberatung</h3>
+          <p><a href="steuererklaerung.html">Detaillierte Informationen</a></p>
+        </article>
 
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Persönliche Betreuung</h3>
-            <p style="color: #666; font-size: 0.875rem;">Sie erhalten eine persönliche Betreuung von Ihrem Finanzberater.</p>
-          </div>
-        </div>
+        <article>
+          <h3>Vorsorgeanalyse</h3>
+          <p><a href="vorsorgeanalyse.html">Detaillierte Informationen</a></p>
+        </article>
 
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Moderne Technologie</h3>
-            <p style="color: #666; font-size: 0.875rem;">Wir nutzen moderne Technologien für optimale Lösungen.</p>
-          </div>
-        </div>
+        <article>
+          <h3>Immobilienbewertung</h3>
+          <p><a href="immobilienbewertung.html">Detaillierte Informationen</a></p>
+        </article>
 
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Transparente Gebühren</h3>
-            <p style="color: #666; font-size: 0.875rem;">Unsere Gebühren sind transparent und nachvollziehbar.</p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 1rem;">
-          <div style="color: #003366; font-size: 1.5rem; flex-shrink: 0;">✓</div>
-          <div>
-            <h3 style="font-weight: bold; color: #333; margin-bottom: 0.5rem;">Langfristige Partnerschaft</h3>
-            <p style="color: #666; font-size: 0.875rem;">Wir begleiten Sie langfristig auf Ihrem Weg zu finanzieller Sicherheit.</p>
-          </div>
-        </div>
+        <article>
+          <h3>Vermögensverwaltung & smzh Markets</h3>
+          <p><a href="markets.html">Marktkommentare & Strategien</a></p>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <h2>Bereit, Ihre Finanzielle Zukunft zu gestalten?</h2>
-      <p>Kontaktieren Sie uns noch heute für ein unverbindliches Gespräch.</p>
-      <button class="btn-primary">Termin vereinbaren</button>
-    </div>
-  </section>
+    <section class="container">
+      <h2>Wie wir arbeiten</h2>
+      <p>Klare Prozesse, interdisziplinäres Team, revisionssichere Dokumentation — wir liefern umsetzbare Empfehlungen mit klarer Verantwortlichkeit.</p>
+    </section>
 
-  <!-- Footer -->
+    <section class="cta container">
+      <a class="btn-primary" href="contact.html">360° Check-Up anfragen</a>
+    </section>
+  </main>
+
   <footer>
-    <div class="footer-content">
-      <div class="footer-grid">
-        <div class="footer-section">
-          <h3>smzh</h3>
-          <p>Unabhängiger Finanzdienstleister für alle Ihre Lebenssituationen.</p>
-          <div class="footer-contact">
-            <span>📞</span>
-            <span>+41 44 123 45 67</span>
-          </div>
-          <div class="footer-contact">
-            <span>✉️</span>
-            <span>info@smzh.ch</span>
-          </div>
-          <div class="footer-contact">
-            <span>📍</span>
-            <span>Zürich, Schweiz</span>
-          </div>
-          <div class="footer-links" style="margin-top: 1rem;">
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h3>360° Check-Up anfragen</h3>
-          <form class="footer-form">
-            <input type="text" placeholder="Ihr Name" required>
-            <input type="email" placeholder="Ihre E-Mail" required>
-            <input type="tel" placeholder="Telefon" required>
-            <button type="submit">Anfrage senden</button>
-          </form>
-        </div>
-
-        <div class="footer-section">
-          <h3>Newsletter</h3>
-          <p>Erhalten Sie regelmäßig Tipps und Neuigkeiten rund um Ihre Finanzen.</p>
-          <form class="footer-form">
-            <input type="email" placeholder="Ihre E-Mail" required>
-            <button type="submit">Abonnieren</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 smzh. Alle Rechte vorbehalten.</p>
-        <div class="footer-bottom-links">
-          <a href="impressum.html">Impressum</a>
-          <a href="privacy.html">Datenschutz</a>
-          <a href="terms.html">AGB</a>
-        </div>
-      </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 smzh. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
 </html>
-

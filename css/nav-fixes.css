@@ -1,0 +1,63 @@
+/* Nav & Burger fixes for mobile and footer small improvements */
+
+/* Burger button */
+.nav-burger {
+  display: none;
+  background: none;
+  border: none;
+  padding: 6px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-burger .bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--primary-blue, #003366);
+  margin: 4px 0;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+.nav-burger.open .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-burger.open .bar:nth-child(2) { opacity: 0; }
+.nav-burger.open .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile navigation behaviour */
+@media (max-width: 768px) {
+  /* show burger, hide default horizontal nav */
+  .nav-burger {
+    display: inline-flex;
+  }
+
+  /* main-nav becomes vertical, hidden by default */
+  #main-nav {
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 64px; /* height of header */
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border-top: 1px solid var(--border-color, #ddd);
+    z-index: 60;
+  }
+
+  #main-nav.open {
+    display: block;
+  }
+
+  #main-nav a {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    color: var(--dark-blue, #1a3a52);
+  }
+
+  .header-container { position: relative; }
+}
+
+/* Ensure footer links are readable on small screens */
+@media (max-width: 768px) {
+  .footer-bottom-links { flex-direction: column; gap: 0.5rem; }
+}
